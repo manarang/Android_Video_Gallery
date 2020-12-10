@@ -6,10 +6,8 @@ Php 7 dengan Maria db server serta Apache server.
 
 Android dengan VideoView serta AsyncTask untuk mengambil data dari server.
 
-Branch web serta Android.
-
-Di web ada : VG.zip untuk ditaruh di website.
+Untu web ada : VG.zip untuk ditaruh di website.
 Serta Video.sql untuk di masukkan ke mysql ( mariadb ).
 
-Di Android ada: java dan res.
+Untuk  Android ada: java dan res.zip ( Drawable, Layout, Value, MipMap_hdpi)
 
