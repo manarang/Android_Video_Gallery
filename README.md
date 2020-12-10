@@ -2,6 +2,7 @@
 Android with Web Application
 
 Website harus ditaruh di server ( VPS or dedicated ).
+Dengan ssl enable ( https ).
 Php 7 dengan Maria db server serta Apache server.
 
 Android dengan VideoView serta AsyncTask untuk mengambil data dari server.
