@@ -12,3 +12,5 @@ Serta Video.sql untuk di masukkan ke mysql ( mariadb ).
 
 Untuk  Android ada: java dan res.zip ( Drawable, Layout, Value, MipMap_hdpi)
 
+Bila perlu penjelasan lebih lanjut silakan hubungi saya di : 
+petrusjonatan@yahoo.com
