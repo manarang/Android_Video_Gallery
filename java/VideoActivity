@@ -1,1 +1,63 @@
+package com.vg;
+
+import android.app.Activity;
+import android.content.pm.ActivityInfo;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.MediaController;
+import android.widget.VideoView;
+
+public class VideoActivity extends Activity {
+
+    private VideoView vV;
+    private String alamat, pindah;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.video);
+
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+        pindah = getIntent().getExtras().getString("Pindah");
+
+        GetAlamat();
+
+        vV = findViewById(R.id.vdVw);
+        
+        MediaController mediaController= new MediaController(this);
+        mediaController.setAnchorView(vV);
+        vV.setMediaController(mediaController);
+        vV.setVideoPath(alamat);
+        vV.requestFocus();
+        vV.start();
+    }
+
+    private void GetAlamat(){
+       String genre = null;
+       String igenre = pindah.substring(0,1);
+       String tempat = pindah.substring(pindah.lastIndexOf('/'),pindah.length());
+       switch (igenre){
+           case "1":
+               genre = "paskah";
+               break;
+           case "2":
+               genre = "natal";
+               break;
+           case "3":
+               genre = "bulkel";
+               break;
+           case "4":
+               genre = "kebum";
+               break;
+           case "5":
+               genre = "sibap";
+               break;
+           case "6":
+               genre = "hutgki";
+               break;
+       }
+      alamat = "https://gkikr.net/v/" + genre + tempat;
+    }
+}
 
