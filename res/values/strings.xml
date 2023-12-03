@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VG</string>
+
+    <string-array name="genre">
+        <item>1.Paskah</item>
+        <item>2.Natal</item>
+        <item>3.Bulan Keluarga</item>
+        <item>4.Kebaktian Umum</item>
+        <item>5.Sidi-Baptis</item>
+        <item>6.HUT GKI</item>
+    </string-array>
+
+</resources>
