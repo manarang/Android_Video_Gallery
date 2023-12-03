@@ -1,1 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DDCCCC" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:src="@drawable/ic_logo"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="70dp"
+            android:id="@+id/imgLogo"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:src="@drawable/ic_smv"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:src="@drawable/ic_exit"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:id="@+id/exit"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="70dp">
+
+        <Spinner
+            android:id="@+id/spin"
+            android:layout_weight="1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:src="@drawable/ic_search"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:id="@+id/search"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="5dp" >
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_margin="3dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/lV" />
+        
+    </ScrollView>
+
+</LinearLayout>
 
